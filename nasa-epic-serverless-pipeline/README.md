@@ -46,9 +46,6 @@ The NASA client package and the Lambda handler came from my class's starter repo
 
 I tore everything down and closed the AWS account after the class.
 
-## Screenshots
-
-<!-- drag screenshots here -->
 
 ---
 
