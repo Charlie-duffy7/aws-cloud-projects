@@ -1,0 +1,13 @@
+FROM public.ecr.aws/lambda/python:3.12-x86_64
+
+# the NASA package builds with hatchling and needs git for its version number
+RUN dnf install -y git && dnf clean all
+RUN pip install --upgrade pip hatchling hatch-vcs
+
+COPY . ${LAMBDA_TASK_ROOT}
+WORKDIR ${LAMBDA_TASK_ROOT}
+
+RUN git config --global --add safe.directory ${LAMBDA_TASK_ROOT}
+RUN pip install --no-cache-dir .
+
+CMD ["lambda_handler.handler"]
