@@ -41,10 +41,6 @@ A fixed 10 second wait is kind of a hack. boto3 has `wait_until_exists()`, which
 
 The starter code for connecting to DynamoDB and Redis came from my class repo (`czabriskie/redis-dynamo`). I combined it into one script and added the caching logic.
 
-## Demo
-
-<!-- add demo video link and screenshots here -->
-
 ---
 
 *AI note: I used Claude (an AI assistant) while building this to help with the code and debugging, and to help write this README.*
