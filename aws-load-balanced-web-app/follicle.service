@@ -1,0 +1,12 @@
+[Unit]
+Description=Follicle Force 3000
+After=network.target
+
+[Service]
+Environment=PORT=80
+WorkingDirectory=/opt/follicle-force-3000/app
+ExecStart=/usr/bin/python3 /opt/follicle-force-3000/app/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
