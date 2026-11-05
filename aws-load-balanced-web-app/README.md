@@ -29,9 +29,6 @@ The app itself came from my class's starter repo, [czabriskie/follicle-force-300
 
 I deleted all of it and closed my AWS account after the class.
 
-## Screenshots
-
-<!-- drag screenshots here -->
 
 ---
 
